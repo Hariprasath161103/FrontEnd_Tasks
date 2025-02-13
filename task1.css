@@ -1,0 +1,91 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+     font-family: 'Poppins', sans-serif;
+    
+}
+body{
+     background-color: gray;
+}
+.navb{
+    display: flex;
+    background-color:black;
+    color: whitesmoke;
+    padding: 10px;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+
+ul,h1,li{
+    display: inline-block;
+}
+.navb h1{
+    padding-left: 10px;
+}
+.navb span{
+    color: red;
+}
+li{
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;    
+}
+li:hover{
+    color: red;   
+}
+.mainc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.cant{
+    max-width: 400px;
+    
+    display: flex;
+    flex-wrap: wrap;
+   margin-left: 100px;
+  
+}
+.cant span{
+    color: red;
+    font-size: 70px;
+}
+.cant h1{
+    font-size: 50px;
+}
+.cant p{
+    font-size: 40px;
+}
+.cant input{
+    border: 2px solid red;
+    height: 70px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+}
+.cant button{
+    border: 2px solid black;
+    height: 40px;
+    width: 50%;
+    margin: 5px;
+    margin-left: 95px;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 5px;
+}
+button:hover{
+ background-color: whitesmoke;
+ color: red;
+}
+.car img{
+    width: 700px;
+    height: 400px;
+   
+    
+}
+.car:hover{
+    transition-duration: 2s;
+    transform: translateX(-10%);
+}
