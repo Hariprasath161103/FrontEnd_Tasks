@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <script src="gallery.js"></script>
+    <link rel="stylesheet" href="gallery.css">
+    <div class=head>
+        <h1>Image Gallery</h1>
+    </div>
+    
+    
+    <div class="main">
+        <div class="cant">
+            <img src="img3.jpg"class="images">
+            <img src="img4.jpg"class="images">
+            <img src="img1.jpg"class="images">
+            <img src="img2.jpg"class="images">
+            <img src="img3.jpg"class="images">
+            <img src="img4.jpg"class="images">
+        </div>
+        <div class="popup">
+        <span>&times;</span>
+        <img src="img3.jpg">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+    <script>
+        document.querySelectorAll('.cant img').forEach(images => {
+        images.onclick =()=>{
+        document.querySelector('.popup').style.display="block";
+        document.querySelector('.popup img').src = images.getAttribute('src')
+            }   
+        });
+        document.querySelector('.popup span').onclick = ()=>{
+            document.querySelector('.popup').style.display="none";
+        }
+        document.querySelector('.prev').onclick = ()=>{
+            document.querySelector('.popup img').src = "img1.jpg"
+        }
+        document.querySelector('.next').onclick = ()=>{
+            document.querySelector('.popup img').src = "img2.jpg"
+        }
+    </script>
+</body>
+</html>
